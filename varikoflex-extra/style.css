@@ -1,0 +1,896 @@
+body{
+	margin: 0;
+	font-size: 20px;
+	font-family: 'Montserrat';
+	color: #5B3557;
+}
+.hero1{
+	background: url("img/hero1-bg.jpg") top center no-repeat;
+	background-size: cover;
+	padding: 100px 10px;
+}
+.hero1 > div{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.hero1 h1{
+	font-family: 'Playfair Display';
+	font-size: 64px;
+	font-weight: 400;
+	margin: 0 0 70px;
+}
+.hero1 h2{
+	font-family: 'Playfair Display';
+	font-size: 48px;
+	font-weight: 400;
+	margin: 0 0 10px;
+	text-align: center;
+}
+.hero1 h3{
+	font-size: 32px;
+	font-weight: 600;
+	margin: 0 0 20px;
+}
+.hero1 p{
+	max-width: 736px;
+	font-size: 20px;
+	margin: 0 auto 20px;
+}
+.hero1 > div > div{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 0 80px;
+}
+.hero1 > div > div > div{
+	width: 50%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.hero1 > div img{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+.cta{
+	background: #5B3557;
+    padding: 34px 0;
+    font-size: 20px;
+    margin: 30px auto;
+    display: block;
+    max-width: 280px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+}
+.hero2{
+	background: url("img/hero2-bg.jpg") top center no-repeat;
+	background-size: cover;
+	padding: 50px 10px;
+	color:white;
+}
+.hero2 > div{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.hero2 .logo{
+	width: 130px;
+}
+.hero2 > div > .flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 100px 0 80px;
+}
+.hero2 > div > .flex > div{
+	width: 30%;
+}
+.hero2 h3{
+	font-family: 'Playfair Display';
+	font-size: 64px;
+	font-weight: 400;
+	line-height: 58px;
+	margin: 0 0 5px;
+}
+.hero2 h4{
+	font-size: 24px;
+	font-weight: 500;
+	margin: 0 0 5px;
+}
+.hero2 p{
+	font-size: 16px;
+	margin: 0 0 10px;
+}
+.hero2 .termek-hero img{
+	width: 80%;
+}
+.hero2 ul {
+    list-style: none;
+    max-width: 130px;
+    margin: 0 auto;
+}
+.hero2 li {
+    position: relative;
+    margin: 0 0 6px;
+	font-size: 16px;
+}
+.hero2 li:before {
+    content: url(img/list-ikon.svg);
+    position: absolute;
+    left: -30px;
+    top: 1px;
+}
+.hero2 .osszetevok {
+    background: white;
+    padding: 24px 0;
+    font-size: 20px;
+    margin: 10px auto;
+    display: block;
+    max-width: 210px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #5B3557;
+}
+.hero2 .cta {
+    background: white;
+    padding: 24px 0;
+    font-size: 20px;
+    margin: 10px auto;
+    display: block;
+    max-width: 210px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 3px;
+    color: #5B3557;
+    text-decoration: none;
+}
+.hero2 .leiras{
+	max-width: 500px;
+	margin: 0 auto 30px;
+	text-align: justify;
+}
+.biztonsag{
+	background: url("img/biztonsag-bg.jpg") top center no-repeat;
+	background-size: cover;
+	padding: 100px 10px;
+	color:white;
+}
+.biztonsag > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.biztonsag h3{
+	width: 50%;
+	font-family: 'Playfair Display';
+	font-size: 64px;
+	font-weight: 400;
+	font-style: italic;
+	margin: 0 0 20px;
+	position: relative;
+	line-height: 70px;
+}
+.biztonsag > div div{
+	width: 50%;
+	font-size: 16px;
+}
+.biztonsag h3::after {
+    content: url(img/arrow2.svg);
+    position: absolute;
+    margin: 0 0 0 40px;
+    top: 60px;
+}
+.garancia{
+	background: url("img/garancia-bg.jpg") top center no-repeat;
+	background-size: cover;
+	padding: 100px 10px;
+}
+.garancia > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.garancia h3{
+	width: 50%;
+	font-family: 'Playfair Display';
+	font-size: 64px;
+	font-weight: 400;
+	font-style: italic;
+	margin: 0 0 20px;
+	position: relative;	
+}
+.garancia > div div{
+	width: 50%;
+	font-size: 16px;
+}
+.garancia h3::after {
+    content: url(img/arrow.svg);
+    position: absolute;
+    margin: 0 0 0 20px;
+    top: -12px;
+}
+.velemenyek{
+	background: #5B3557;
+	padding: 100px 10px;
+	color:white;
+}
+.velemenyek > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.velemenyek h3{
+	font-family: 'Playfair Display';
+	font-size: 64px;
+	font-weight: 400;
+	margin: 0 0 50px;
+	text-align: center;
+	line-height: 94px;
+}
+.velemenyek > div > div{
+	width: 50%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	position: relative;
+	font-size: 16px;
+}
+.velemenyek > div > div div{
+	margin: 0 0 20px;
+}
+.velemenyek > div > div div:last-child{
+	margin: 0 0 20px;
+	display: flex;
+	align-items: center;
+}
+.velemenyek cite span{
+	font-family: 'Playfair Display';
+	font-size: 36px;
+	font-weight: 400;
+}
+aposztrof {
+    font-family: 'Playfair Display';
+    font-size: 690px;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    line-height: 0;
+    z-index: 0;
+    opacity: 5%;
+}
+.rolunk{
+	background: url("img/rolunk-bg.jpg") bottom center no-repeat;
+	background-size: cover;
+	padding: 160px 10px 70px;
+	color:white;
+}
+.rolunk > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.rolunk > div > div{
+	width:50%;
+	margin: 0 0 0 auto;
+	padding: 0 60px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+.rolunk h3{
+	font-family: 'Playfair Display';
+	font-size: 64px;
+	font-weight: 400;
+	margin: 0;
+	text-align: center;
+}
+.rolunk p:last-child {
+    font-size: 24px;
+    font-family: 'Playfair Display';
+    text-align: center;
+    line-height: 0.8;
+    margin: 40px 0 0;
+}
+.rolunk p:last-child span{
+	font-size: 16px;
+	font-family: 'Montserrat';
+	font-weight: 300;
+}
+.hero5{
+	background: url('img/hero5.jpg') center center no-repeat;
+	background-size: cover;
+	padding: 100px 10px;
+	box-sizing: border-box;
+}
+.hero5 h3{
+	font-family: 'Comfortaa';
+	font-size: 40px;
+	font-weight: 400;
+	text-align: center;
+	margin: 0;
+}
+.hero5 p{
+	text-align: center;
+}
+.termekek{
+	max-width: 1024px;
+	margin: 120px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+.termek{
+	width: 31%;
+	background: white;
+	border-radius: 30px;
+	box-shadow: 8px 8px 25px rgba(0,0,0,0.1);
+	padding: 27px;
+	margin: 0 0 20px;
+	box-sizing: border-box;
+	position: relative;
+}
+.termek img {
+    width: 100%;
+    margin: -120px 0 0;
+}
+.termek-nev{
+	font-family: 'Comfortaa';
+	font-size: 24px;
+	font-weight: 700;
+}
+.termek ul {
+	font-family: 'Comfortaa';
+	font-weight: 500;
+}
+.ar-cta{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin-top: 30px;
+}
+.termek-ar{
+	font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+}
+.termek-ar del {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF7B00;
+}
+.termek-leiras{
+	font-size: 16px;
+	color: #7B7B7B;
+}
+.kosar-gomb{
+	background: linear-gradient(70deg, #FF7B00, #FFC100);
+	display: inline-block;
+    padding: 14px 32px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+	box-shadow: 0 29px 27px -16px rgba(255, 123, 0, 0.4);
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+.kosar-gomb:active {
+    transform: scale(0.97);
+    box-shadow: 0 20px 23px -10px rgba(255, 123, 0, 0.5);
+}
+.kosar-gomb input{
+	display: none;
+}
+.akcio {
+    background: #F22D0A;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 600;
+    position: absolute;
+    top: 70px;
+    right: -15px;
+}
+.rendeles{
+	max-width: 1024px;
+	margin: 0 auto;
+	color: #1B2C17;
+}
+.rendeles h3, .rendeles p{
+	text-align: center;
+	margin: 0;
+}
+.rendeles .form{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top:30px;
+}
+.rendeles .form > div{
+	width: 45%;
+}
+.kosar-termek {
+    display: flex;
+    align-items: center;
+	gap: 5px;
+    background: linear-gradient(62deg, #92431B, #DC8942);
+    border-radius: 30px;
+    padding: 0;
+    margin: 0 0 50px;
+    box-sizing: border-box;
+    color: white;
+	position: relative;
+	box-shadow: 0 22px 43px -7px rgb(163 73 28 / 70%);
+}
+.kosar-termek img {
+    max-height: 120px;
+    margin: -30px 0 0 0;
+}
+.kosar-termeknev {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+.kosar-termek input[type="text"] {
+    width: 42px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 18px;
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+.kosar-termekar {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 5px;
+}
+.kosar-mennyiseg{
+	font-size: 16px;
+	font-weight: 300;
+}
+.kosar-mennyiseg button {
+    background: transparent;
+    border: 0;
+	padding: 0;
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+}
+.x-button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: white;
+    font-size: 21px;
+    position: absolute;
+    top: 35px;
+    right: 6px;
+    cursor: pointer;
+}
+.kosar .osszeg {
+    border-top: 1px solid;
+    text-align: right;
+	margin: 20px 0 30px;
+	padding-top: 10px;
+}
+.kosar .osszeg span{
+	font-weight: 600;
+	font-size: 30px;
+}
+.kosar #sum {
+    font-size: 26px;
+    font-weight: 600;
+}
+input#myCheck {
+    height: 20px;
+    width: 20px;
+    transform: translateY(3px);
+}
+.form {
+    padding: 0 20px 100px;
+}
+.form h3{
+	font-family: 'Playfair Display';
+	font-size: 64px;
+	font-weight: 400;
+	margin: 40px auto 0;
+	text-align: center;
+	color: #1B2C17;
+}
+.form > div{
+	max-width: 1024px;
+	margin: 30px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+.form > div > div,
+.form form{
+	width: 46%;
+}
+.rendeles-form{
+	padding: 20px;
+	box-sizing: border-box;
+}
+#theForm input[type="text"],
+#theForm input[type="email"],
+#theForm select{
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+    border: 0;
+	border-bottom: 1px solid rgba(15, 40, 70, 0.3);
+    font-size: 18px;
+	background: transparent;
+	color: #0F2846;
+}
+#theForm input[type="text"]:focus-visible,
+#theForm input[type="email"]:focus-visible,
+#theForm select:focus-visible{
+	outline: none;
+    border-bottom: 1px solid rgba(15, 40, 70, 1);
+}
+#theForm input:-webkit-autofill {
+    background-color: transparent !important;
+    color: #0F2846 !important;
+}
+.rendeles-form label {
+	font-size: 16px;
+	text-transform: uppercase;
+    display: inline-block;
+}
+.iranyitoszam{
+	width:37%;
+	display: inline-block;
+}
+.varos{
+	width:60%;
+	display: inline-block;
+}
+.radio-label{
+	margin: 20px 0;
+}
+.radio-label label:has(> input:checked) {
+    background: #00d2ff;
+    color: white;
+    border: 2px solid rgba(15, 40, 70, 0.3);
+}
+.radio-label label {
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 16px;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+	text-align: center;
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+.radio-label input{
+	display: none;
+}
+.radio-label .szallitasi-koltseg{
+	font-size: 12px;
+}
+.rendeles-gomb {
+    background: linear-gradient(62deg, #92431B, #DC8942);
+    text-decoration: none;
+    padding: 20px 50px;
+    margin: 20px auto;
+    display: block;
+    max-width: 320px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+	border:0;
+    border-radius: 15px;
+	box-shadow: 0 22px 43px -7px rgb(163 73 28 / 70%);
+	cursor:pointer;
+}
+.rendeles{
+	max-width: 1024px;
+	margin: 0 auto;
+	color: #1B2C17;
+}
+.rendeles h3, .rendeles p{
+	text-align: center;
+	margin: 0;
+}
+.rendeles .form{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top:30px;
+}
+.rendeles .form > div{
+	width: 45%;
+}
+.kosar-termek {
+    display: flex;
+    align-items: center;
+	gap: 5px;
+    background: linear-gradient(62deg, #92431B, #DC8942);
+    border-radius: 30px;
+    padding: 0;
+    margin: 0 0 50px;
+    box-sizing: border-box;
+    color: white;
+	position: relative;
+	box-shadow: 0 22px 43px -7px rgb(163 73 28 / 70%);
+}
+.kosar-termek img {
+    max-height: 120px;
+    margin: -30px 0 0 0;
+}
+.kosar-termeknev {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+.kosar-termek input[type="text"] {
+    width: 42px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 18px;
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+.kosar-termekar {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 5px;
+}
+.kosar-mennyiseg{
+	font-size: 16px;
+	font-weight: 300;
+}
+.kosar-mennyiseg button {
+    background: transparent;
+    border: 0;
+	padding: 0;
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+}
+.x-button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: white;
+    font-size: 21px;
+    position: absolute;
+    top: 35px;
+    right: 6px;
+    cursor: pointer;
+}
+.kosar .osszeg {
+    border-top: 1px solid;
+    text-align: right;
+	margin: 20px 0 30px;
+	padding-top: 10px;
+}
+.kosar .osszeg span{
+	font-weight: 600;
+	font-size: 30px;
+}
+.kosar #sum {
+    font-size: 26px;
+    font-weight: 600;
+}
+input#myCheck {
+    height: 20px;
+    width: 20px;
+    transform: translateY(3px);
+}
+.form {
+    padding: 0 20px 100px;
+}
+.form h3{
+	font-family: 'Playfair Display';
+	font-size: 64px;
+	font-weight: 400;
+	margin: 40px auto 0;
+	text-align: center;
+	color: #1B2C17;
+}
+.form > div{
+	max-width: 1024px;
+	margin: 30px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+.form > div > div,
+.form form{
+	width: 46%;
+}
+.rendeles-form{
+	padding: 20px;
+	box-sizing: border-box;
+}
+#theForm input[type="text"],
+#theForm input[type="email"],
+#theForm select{
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+    border: 0;
+	border-bottom: 1px solid rgba(15, 40, 70, 0.3);
+    font-size: 18px;
+	background: transparent;
+	color: #0F2846;
+}
+#theForm input[type="text"]:focus-visible,
+#theForm input[type="email"]:focus-visible,
+#theForm select:focus-visible{
+	outline: none;
+    border-bottom: 1px solid rgba(15, 40, 70, 1);
+}
+#theForm input:-webkit-autofill {
+    background-color: transparent !important;
+    color: #0F2846 !important;
+}
+.rendeles-form label {
+	font-size: 16px;
+	text-transform: uppercase;
+    display: inline-block;
+}
+.iranyitoszam{
+	width:37%;
+	display: inline-block;
+}
+.varos{
+	width:60%;
+	display: inline-block;
+}
+.radio-label{
+	margin: 20px 0;
+}
+.radio-label label:has(> input:checked) {
+    background: #00d2ff;
+    color: white;
+    border: 2px solid rgba(15, 40, 70, 0.3);
+}
+.radio-label label {
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 16px;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+	text-align: center;
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+.radio-label input{
+	display: none;
+}
+.radio-label .szallitasi-koltseg{
+	font-size: 12px;
+}
+.rendeles-gomb {
+    background: linear-gradient(62deg, #92431B, #DC8942);
+    text-decoration: none;
+    padding: 20px 50px;
+    margin: 20px auto;
+    display: block;
+    max-width: 320px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+	border:0;
+    border-radius: 15px;
+	box-shadow: 0 22px 43px -7px rgb(163 73 28 / 70%);
+	cursor:pointer;
+}
+
+
+@media (max-width:500px){
+.hero1 {
+    padding: 50px 10px;
+}
+.hero1 h1 {
+    font-size: 28px;
+    line-height: normal;
+	margin: 0 0 30px;
+}
+.hero1 > div > div:nth-of-type(2) {
+    flex-direction: column-reverse;
+}
+.hero1 > div > div > div,
+.hero1 > div img{
+    width: 100%;
+}
+.hero1 h3 {
+	font-size: 20px;
+	line-height: normal;
+}
+.hero1 p {
+    font-size: 16px;
+}
+.hero2 {
+    background: url(img/hero2-mobil-bg.jpg) center no-repeat;
+    background-size: cover;
+    padding: 0px 10px 439px;
+}
+.hero2 > div > div {
+    width: 100%;
+}
+.hero2 p {
+    font-size: 16px;
+}
+.hero2 h3 {
+    font-size: 46px;
+}
+.hero3 > div > div,
+.hero3 > div > div:last-child{
+    width: 100%;
+}
+.hero1 h2,
+.hero2 h3,
+.rolunk h3,
+.velemenyek h3,
+.megrendeles h3 {
+    font-size: 32px;
+	line-height: normal;
+}
+.garancia h3 {
+    width: 100%;
+    font-size: 32px;
+}
+.garancia > div div {
+    width: 100%;
+}
+.velemenyek > div > div {
+    width: 100%;
+}
+.velemenyek cite span {
+    font-size: 24px;
+}
+.rolunk {
+    background: url(img/rolunk-bg.jpg) 73% no-repeat;
+	padding: 185px 10px 70px;
+}
+.rolunk > div > div {
+    width: 100%;
+	padding: 0;
+}
+.megrendeles .rendeles-form, .megrendeles .menetrend {
+    width: 100%;
+}
+.rendeles-form {
+    padding: 10px;
+}
+form button {
+    width: 100%;
+    font-size: 16px;
+}
+}
