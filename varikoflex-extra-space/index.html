@@ -35,6 +35,8 @@
 <body>
 <!-- Kosár popup -->
 <div id="succes-cart">A termék kosárba rakva.</div>
+<!-- Alert popup -->
+<div id="alert-cart"></div>
 	
 <section class="hero1">
 	<div>
@@ -155,8 +157,7 @@
 				<div class="termek-leiras">1 x Varikoflex Extra</div>
 				<div class="ar-cta">
 					<div class="termek-ar"><del>9 690 Ft</del><br>9 090 Ft</div>
-					<!--<button class="kosar-gomb" onclick="addToCart(257, 'Varikoflex Extra', 9090, 'varikoflex-one.png')">Kosárba</button>-->
-					<a class="kosar-gomb" href="https://hillvital.hu/index.php?route=checkout/cart&product_id=715&quantity=1">Kosárba</a>
+					<button class="kosar-gomb" onclick="addToCart(257, 'Varikoflex Extra', 9090, 'varikoflex-one.png')">Kosárba</button>
 				</div>
 			</div>
 
@@ -167,8 +168,7 @@
 				<div class="termek-leiras">2 x Varikoflex Extra</div>
 				<div class="ar-cta">
 					<div class="termek-ar"><del>19 380 Ft</del><br>17 580 Ft</div>
-					<!--<button class="kosar-gomb" onclick="addToCart(258,'Varikoflex Extra Duo', 17580, 'varikoflex-duo.png')">Kosárba</button>-->
-					<a class="kosar-gomb" href="https://hillvital.hu/index.php?route=checkout/cart&product_id=715&quantity=2">Kosárba</a>
+					<button class="kosar-gomb" onclick="addToCart(258,'Varikoflex Extra Duo', 17580, 'varikoflex-duo.png')">Kosárba</button>
 				</div>
 			</div>
 
@@ -179,15 +179,14 @@
 				<div class="termek-leiras">3 x Varikoflex Extra</div>
 				<div class="ar-cta">
 					<div class="termek-ar"><del>29 070 Ft</del><br>25 770 Ft</div>
-					<!--<button class="kosar-gomb" onclick="addToCart(259, 'Varikoflex Extra Trio', 25770, 'varikoflex-trio.png')">Kosárba</button>-->
-					<a class="kosar-gomb" href="https://hillvital.hu/index.php?route=checkout/cart&product_id=715&quantity=3">Kosárba</a>
+					<button class="kosar-gomb" onclick="addToCart(259, 'Varikoflex Extra Trio', 25770, 'varikoflex-trio.png')">Kosárba</button>
 				</div>
 			</div>
 		</div>
 		<p style="font-size: 22px;">Ingyenes és gyors (24 óra alatti) belföldi házhozszállítással.</p>
 	</div>	
 </section>
-<!--
+
 <section id="form" class="form">
 
 	<h3>Megrendelés</h3>
@@ -248,21 +247,21 @@
 				<div class="radio-label">
 					<label onclick="updateTotalAmount()">
 						<input type="radio" name="radio-payment" value="1" data-price="0" />
-						<span>Utánvétel</span><br><span class="szallitasi-koltseg">+1000 Ft</span>
+						<span>Utánvétel</span><!--<br><span class="szallitasi-koltseg">+1000 Ft</span>-->
 					</label>
 					<label onclick="updateTotalAmount()">
 						<input type="radio" name="radio-payment" value="2" />
 						<span>Banki átutalás</span>
 					</label>
-					<label onclick="updateTotalAmount()">
+					<!--<label onclick="updateTotalAmount()">
 						<input type="radio" name="radio-payment" value="3" />
 						<span>Bankkártya</span>
-					</label>
+					</label>-->
 				</div>
-				<div class="radio-label">
+				<!--<div class="radio-label">
 					<label onclick="updateTotalAmount()">
 						<input type="radio" name="radio-shipping" value="Hazhozszallitas" data-price="0" />
-						<span	>Házhozszállítás</span><br><span class="szallitasi-koltseg">+1590 Ft</span>
+						<span>Házhozszállítás</span><br><span class="szallitasi-koltseg">+1590 Ft</span>
 					</label>
 					<label onclick="updateTotalAmount()">
                         <input type="radio" name="radio-shipping" value="GLS" data-price="1490" />
@@ -272,23 +271,23 @@
 						<input type="radio" name="radio-shipping" value="FOXPOST" data-price="0" />
 						<span>Foxpost</span><br><span class="szallitasi-koltseg">+1290 Ft</span>
 					</label>
-				</div>
+				</div>-->
 				<iframe frameborder="0" loading="lazy" src="https://cdn.foxpost.hu/apt-finder/v1/app/" width="100%" height="600px" id="foxpost" style="display:none;"></iframe>
 				<input type="hidden" name="data[fp_automata]" id="foxpostData">
 
 
-				<p style="color:#0F2846; font-size: 12px; text-align: left;">A megrendelés elküldésével elfogadom az <a style="color:#0F2846;" href="https://rachelcare.hu/aszf.html" target="_blank">ÁSZF</a> és az <a style="color:#0F2846;" href="https://rachelcare.hu/adatkezeles.html" target="_blank">Adatkezelési tájékoztatóban</a> foglaltakat.</p>
+				<p style="color:#0F2846; font-size: 12px; text-align: left;">A megrendelés elküldésével elfogadom az <a style="color:#0F2846;" href="https://hillvital.hu/vasarlasi_feltetelek_5" target="_blank">ÁSZF</a> és az <a style="color:#0F2846;" href="https://hillvital.hu/adatvedelmi_nyilatkozat_3" target="_blank">Adatkezelési tájékoztatóban</a> foglaltakat.</p>
 				<button class="rendeles-gomb" type="button" onclick="postData()">MEGRENDELEM</button>
 			</div>
 		</div>
 	</div>
 </section>
--->
+
 </body>
 
 <script>
-	var cart = [];
-	var total = 0;
+	let cart = [];
+	let total = 0;
 
 	function addToCart(id, name, price, image) {
 		let cartItem = cart.find(item => item.id === id);
@@ -341,7 +340,7 @@
 		}, 500)
 	}
 
-	totalCount = 0;
+	let totalCount = 0;
 	function updateTotalAmount() {
 		const totalAmountElement = document.getElementById("totalAmount");
 		const shippingPrice = $('input[name="radio-shipping"]:checked').data('price') || 0;
@@ -363,27 +362,42 @@
 		console.log(total);
 	}
 
+	function cartPopup() {
+		document.getElementById('succes-cart').classList.add('active');
+		setTimeout(function () {
+			document.getElementById('succes-cart').classList.remove('active');
+		}, 3000);
+	}
+
+	function alertPopup(message) {
+		document.getElementById('alert-cart').innerHTML = message;
+		document.getElementById('alert-cart').classList.add('active');
+		setTimeout(function () {
+			document.getElementById('alert-cart').classList.remove('active');
+		}, 3000);
+	}
+
 
 	function postData() {
 		if (cart.length === 0) {
-			alert('A kosár üres!');
+			alertPopup('A kosár üres!');
 			return;
 		}
-
+		for (i = 0; i < document.querySelectorAll('#theForm input').length; i++) {
+			if (!document.querySelectorAll('#theForm input')[i].reportValidity()) return
+		}
 		if (!document.querySelector('input[name="radio-payment"]:checked')) {
-			alert('Kérlek válassz a fizetési módok közül!');
+			alertPopup('Kérlek válassz a fizetési módok közül!');
 			return;
 		}
-
-		if (!document.querySelector('input[name="radio-shipping"]:checked')) {
-			alert('Kérlek válassz a szállítási módok közül!');
+		/*if (!document.querySelector('input[name="radio-shipping"]:checked')) {
+			alertPopup('Kérlek válassz a szállítási módok közül!');
 			return;
 		}
-
 		if (document.querySelector('input[name="radio-shipping"]:checked').value === 'FOXPOST' && document.getElementById('foxpostData').value === '') {
-			alert('Kérlek válassz ki egy automatát a listából!');
+			alertPopup('Kérlek válassz ki egy automatát a listából!');
 			return;
-		}
+		}*/
 
 		let valid = true;
 		document.querySelectorAll('#theForm input').forEach((input) => {
@@ -400,17 +414,8 @@
 			product_ids.push(item.id);
 			product_qtys.push(item.qty);
 		});
-
-		if (document.querySelector('input[name="radio-shipping"]:checked').value === 'Hazhozszallitas') {
-			product_ids.push(260);
-			product_qtys.push(1);
-		} else if (document.querySelector('input[name="radio-shipping"]:checked').value === 'GLS') {
-			product_ids.push(242);
-			product_qtys.push(1);
-		} else if (document.querySelector('input[name="radio-shipping"]:checked').value === 'FOXPOST') {
-			product_ids.push(261);
-			product_qtys.push(1);
-		}
+		product_ids.push(260);
+		product_qtys.push(1);
 
 		/*if (document.querySelector('input[name="radio-payment"]:checked').value === '1') {
             product_ids.push(244);
@@ -457,10 +462,10 @@
 				let data = await response.json(); // Válasz feldolgozása JSON-ként
 				console.log('Sikeres válasz:', data);
 
-				/*fbq('track', 'Purchase', {
+				fbq('track', 'Purchase', {
 					value: total,
 					currency: 'HUF',
-				});*/
+				});
 
 				if (data.redirect && typeof data.redirect === 'string') {
 					window.location = data.redirect;
@@ -491,17 +496,8 @@
 </script>
 <script>
 	function myFunction() {
-		// Get the checkbox
-		var checkBox = document.getElementById("myCheck");
-		// Get the output text
-		var text = document.getElementById("text");
-
-		// If the checkbox is checked, display the output text
-		if (checkBox.checked == true) {
-			text.style.display = "block";
-		} else {
-			text.style.display = "none";
-		}
+		if (document.getElementById("myCheck").checked) document.getElementById("text").style.display = "block"
+		else document.getElementById("text").style.display = "none"
 	}
 </script>
 <script>
@@ -533,30 +529,5 @@
 			}
 		});
 	});
-</script>
-<script>
-	//Oldal görgetés
-	$(document).ready(function () {
-		$('a').click(function (e) {
-			const targetId = $(this).attr('href'); // Lekérjük az 'href' attribútumból a cél ID-t
-			if (targetId.startsWith('#') && $(targetId).length) { // Ellenőrizzük, hogy egy ID-re mutat-e
-				e.preventDefault(); // Alapértelmezett anchor viselkedés megakadályozása
-
-				const offset = $(targetId).offset().top; // A cél ID távolsága az oldal tetejétől
-				$('html, body').animate({
-					scrollTop: offset // Görgetés a célpontra
-				}, 800); // Görgetés időtartama (800 ms)
-			}
-		});
-	});
-
-</script>
-<script>
-	function cartPopup() {
-		document.getElementById('succes-cart').classList.add('active');
-		setTimeout(function () {
-			document.getElementById('succes-cart').classList.remove('active');
-		}, 3000);
-	}
 </script>
 </html>

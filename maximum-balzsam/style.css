@@ -2,8 +2,8 @@ body{
 	margin: 0;
 	font-size: 20px;
 	font-family: 'Montserrat';
-	color: #5B3557;
-	background: #EBDBEA;
+	color: #255138;
+	background: #DFEEE4;
 }
 #succes-cart{
 	position: fixed;
@@ -26,7 +26,7 @@ body{
 	padding: 100px 10px;
 }
 .hero1 > div{
-	max-width: 1024px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 .hero1 h1{
@@ -69,7 +69,7 @@ body{
 	margin: 0 auto;
 }
 .cta{
-	background: #5B3557;
+	background: #A1C30A;
     padding: 34px 0;
     font-size: 20px;
     margin: 30px auto;
@@ -88,7 +88,7 @@ body{
 	color:white;
 }
 .hero2 > div{
-	max-width: 1024px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 .hero2 .logo{
@@ -151,7 +151,7 @@ body{
     text-align: center;
     font-weight: 700;
     border-radius: 3px;
-    color: #5B3557;
+    color: #255138;
 	line-height: 1;
 	cursor: pointer;
 }
@@ -169,11 +169,11 @@ body{
     text-align: center;
     font-weight: 700;
     border-radius: 3px;
-    color: #5B3557;
+    color: #255138;
     text-decoration: none;
 }
 .hero2 .leiras{
-	max-width: 500px;
+	max-width: 600px;
 	margin: 0 auto 30px;
 	text-align: justify;
 }
@@ -244,7 +244,7 @@ body{
     top: -12px;
 }
 .velemenyek{
-	background: #5B3557;
+	background: #255138;
 	padding: 100px 10px;
 	color:white;
 }
@@ -332,8 +332,8 @@ aposztrof {
 	font-weight: 300;
 }
 .hero5{
-	background: #EBDBEA;
-	padding: 100px 10px 20px;
+	background: #DFEEE4;
+	padding: 100px 10px;
 	box-sizing: border-box;
 }
 .hero5 > div{
@@ -373,7 +373,7 @@ aposztrof {
     margin: -85px 0 0;
 }
 .termek-nev{
-	font-size: 22px;
+	font-size: 21px;
 	font-weight: 600;
 	margin: 0 0 10px;
 }
@@ -387,18 +387,19 @@ aposztrof {
 	font-size: 24px;
     font-weight: 700;
     line-height: 1;
+	color: #A1C30A;
 }
 .termek-ar del {
     font-size: 16px;
     font-weight: 700;
-    color: #A1C30A;
+	color: #255138;
 }
 .termek-leiras{
 	font-size: 16px;
 	color: #7B7B7B;
 }
 .kosar-gomb{
-	background: #5B3557;
+	background: #A1C30A;
 	display: inline-block;
     padding: 14px 32px;
     font-family: 'Montserrat';
@@ -418,7 +419,7 @@ aposztrof {
 	display: none;
 }
 .akcio {
-    background: #A1C30A;
+    background: #5B3557;
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -655,6 +656,7 @@ input#myCheck {
 .hero1 > div > div > div,
 .hero1 > div img{
     width: 100%;
+	padding: 0;
 }
 .hero1 h3 {
 	font-size: 20px;
@@ -685,7 +687,7 @@ input#myCheck {
 .form h3,
 .biztonsag h3,
 .hero5 h3{
-    font-size: 32px;
+	font-size: 26px;
 	line-height: normal;
 }
 .hero1,

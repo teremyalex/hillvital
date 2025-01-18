@@ -1,3 +1,6 @@
+html{
+	scroll-behavior: smooth;
+}
 body{
 	margin: 0;
 	font-size: 20px;
@@ -18,6 +21,24 @@ body{
 	transition: 300ms ease-in-out;
 }
 #succes-cart.active{
+	top:10px;
+}
+#alert-cart{
+	position: fixed;
+	top: -120px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	background: linear-gradient(62deg, #921b1b, #dc4242);
+	color: white;
+	border-radius: 20px;
+	padding: 20px 18px;
+	box-sizing: border-box;
+	z-index: 1;
+	box-shadow: 0 0 43px 0 rgb(99, 16, 16);
+	transition: 300ms ease-in-out;
+}
+#alert-cart.active{
 	top:10px;
 }
 .hero1{
