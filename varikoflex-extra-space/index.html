@@ -383,9 +383,10 @@
 			alertPopup('A kosár üres!');
 			return;
 		}
-		for (i = 0; i < document.querySelectorAll('#theForm input').length; i++) {
-			if (!document.querySelectorAll('#theForm input')[i].reportValidity()) return
-		}
+		document.querySelectorAll('#theForm input').forEach(input => {
+			if (!input.reportValidity()) return;
+		});
+
 		if (!document.querySelector('input[name="radio-payment"]:checked')) {
 			alertPopup('Kérlek válassz a fizetési módok közül!');
 			return;
@@ -398,14 +399,6 @@
 			alertPopup('Kérlek válassz ki egy automatát a listából!');
 			return;
 		}*/
-
-		let valid = true;
-		document.querySelectorAll('#theForm input').forEach((input) => {
-			input.reportValidity();
-			if (input.checkValidity() === false) valid = false;
-		});
-
-		if (!valid) return;
 
 		let product_ids = [];
 		let product_qtys = [];
